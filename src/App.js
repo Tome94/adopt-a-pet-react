@@ -1,5 +1,4 @@
 import HomePage from './pages/home';
-// eslint-disable-next-line
 import SearchPage from './pages/search';
 import PetDetailsPage from './pages/detail';
 // eslint-disable-next-line
@@ -17,6 +16,9 @@ function App() {
           </Route>
           <Route path="/:type?">
             <HomePage />
+          </Route>
+          <Route path="/search">
+            <SearchPage />
           </Route>
         </Switch>
       </div>
